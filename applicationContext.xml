@@ -32,5 +32,7 @@
 	   <constructor-arg name="taz" ref="tanzania"/>
 	   <constructor-arg name="uga" ref="uganda"/>
 	 </bean>
+	 
+	 <bean id ="enableAutowire" class="com.setters.injections.EastAfrica" autowire="byType"/>
 
 </beans>

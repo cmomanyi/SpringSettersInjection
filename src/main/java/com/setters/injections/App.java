@@ -12,6 +12,10 @@ public class App {
 		EastAfrica eastAfricaCountries = appContext.getBean("eastAfrica", EastAfrica.class);
 		
 		System.out.println(eastAfricaCountries.EastAfricaCountriesMotto());
+		
+		EastAfrica enableAutowireCountries = appContext.getBean("enableAutowire", EastAfrica.class);
+		
+		System.out.println("When autowired/"+System.getProperty("line.separator") + enableAutowireCountries.EastAfricaCountriesMotto());
 	}
 
 }
