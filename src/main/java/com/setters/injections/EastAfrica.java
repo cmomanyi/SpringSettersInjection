@@ -8,7 +8,15 @@ public class EastAfrica {
 	private Tanzania tanzania;
 	private Uganda uganda;
 	
-
+	public EastAfrica() {}
+	
+	public EastAfrica( Kenya ken,Ethiopia eth, Somalia som, Tanzania taz, Uganda uga) {
+		this.ethiopia =eth;
+		this.kenya = ken;
+		this.somalia=som;
+		this.tanzania=taz;
+		this.uganda =uga;
+	}
 	
 	public Ethiopia getEthiopia() {
 		return ethiopia;

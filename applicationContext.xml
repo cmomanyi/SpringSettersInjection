@@ -10,12 +10,27 @@
 	<bean id ="uganda" class="com.setters.injections.Uganda"/>
 
 
-	<bean id="eastAfricaCountries" class="com.setters.injections.EastAfrica">
+	<!--  <bean id="eastAfricaCountries" class="com.setters.injections.EastAfrica">
 	 <property name="kenya" ref="kenya"/>
 	  <property name="ethiopia" ref="ethiopia"></property>
 	   <property name="somalia" ref="somalia"/>
 	    <property name="uganda" ref="uganda"/>
 	     <property name="tanzania" ref="tanzania"/>
+	 </bean> -->
+	 
+	<!--  <bean id="eastAfrica" class="com.setters.injections.EastAfrica">
+	 <constructor-arg index="0" ref="kenya"/>
+	 <constructor-arg index="1" ref="ethiopia"/>
+	  <constructor-arg index="2" ref="somalia"/>
+	   <constructor-arg index="3" ref="tanzania"/>
+	   <constructor-arg index="4" ref="uganda"/>
+	 </bean> -->
+	  <bean id="eastAfrica" class="com.setters.injections.EastAfrica">
+	 <constructor-arg name="ken" ref="kenya"/>
+	 <constructor-arg name="eth" ref="ethiopia"/>
+	  <constructor-arg name="som" ref="somalia"/>
+	   <constructor-arg name="taz" ref="tanzania"/>
+	   <constructor-arg name="uga" ref="uganda"/>
 	 </bean>
 
 </beans>

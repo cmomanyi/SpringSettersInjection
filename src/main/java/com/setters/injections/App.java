@@ -9,7 +9,7 @@ public class App {
 	
 		ApplicationContext appContext = new FileSystemXmlApplicationContext("applicationContext.xml");
 		
-		EastAfrica eastAfricaCountries = appContext.getBean("eastAfricaCountries", EastAfrica.class);
+		EastAfrica eastAfricaCountries = appContext.getBean("eastAfrica", EastAfrica.class);
 		
 		System.out.println(eastAfricaCountries.EastAfricaCountriesMotto());
 	}
