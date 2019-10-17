@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id ="kenya" class="com.setters.injections.Kenya"/>
+	<bean id ="ethiopia" class="com.setters.injections.Ethiopia"/>
+	<bean id ="somalia" class="com.setters.injections.Somalia"/>
+	<bean id ="tanzania" class="com.setters.injections.Tanzania"/>
+	<bean id ="uganda" class="com.setters.injections.Uganda"/>
+
+
+	<bean id="eastAfricaCountries" class="com.setters.injections.EastAfrica">
+	 <property name="kenya" ref="kenya"/>
+	  <property name="ethiopia" ref="ethiopia"></property>
+	   <property name="somalia" ref="somalia"/>
+	    <property name="uganda" ref="uganda"/>
+	     <property name="tanzania" ref="tanzania"/>
+	 </bean>
+
+</beans>
