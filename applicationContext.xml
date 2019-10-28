@@ -9,6 +9,13 @@
 	<bean id ="tanzania" class="com.setters.injections.Tanzania"/>
 	<bean id ="uganda" class="com.setters.injections.Uganda"/>
 
+	<bean id="dataSource" class="com.springexpressionlanguange.demo.DataSource">
+	</bean>
+	<bean id="fruit" class="com.springexpressionlanguange.demo.Fruit">
+		<property name="name" value="#{T(com.springexpressionlanguange.demo.DataSource).appleTypestatic + ' Apple'}"/>
+		<property name="nutritionalRating" value="#{T(java.lang.Math).random() * 10}"/>
+	</bean>
+
 
 	<!--  <bean id="eastAfricaCountries" class="com.setters.injections.EastAfrica">
 	 <property name="kenya" ref="kenya"/>
